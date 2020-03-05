@@ -22,4 +22,7 @@ I am gone only use 10 method from Lodash library:
     <li>has</li>
     <li>invert</li>
     <li>findKey</li>
+    <li>drop</li>
+    <li>dropWhile</li>
+    <li>chunk</li>
 </ol>

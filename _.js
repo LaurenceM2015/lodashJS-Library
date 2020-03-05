@@ -88,11 +88,46 @@
       };
       undefined 
       return undefined;
-    } // Task 30: Test the findKey method: node run test/findKey
+    }, // Task 30: Test the findKey method: node run test/findKey
     
+    // Method 8: drop(), Task 31: Specify, Task 32: Ideate, 
+    // Task 33: Implement
+    
+    drop(array, n){
+      if(n === undefined){
+        n = 1;
+      } 
+      let droppedArray = array.slice(n, array.length);
+      return droppedArray;
+      
+    }, // Task 34: Test drop() method, node test/drop.js
+    
+    // Method 9: dropWhile(), Task 35: Specify, Task 36: Ideate, 
+    // Task 37: Implement
+    dropWhile(array, predicate){
+      const callbackFunc = (element, index) => {
+        return !predicate(element, index, array);
+      };
+      let dropNumber = array.findIndex(callbackFunc);
+      let droppedArray = this.drop(array, dropNumber);
+      return droppedArray;
+    }, // Task 38: Test node test/drop-while.js
+    
+    // Method 10: chunk() Task 39: Specify, Task 40: Ideate, 
+    // Task 41: Implement
+    chunk(array, size){
+      if(size === undefined){
+        size = 1;
+      }
+      let arrayChunks = [];
+      for (let i = 0; i < array.length; i+= size ){
+        let arrayChunk = array.slice(i, i+size);
+        arrayChunks.push(arrayChunk);
+      } return arrayChunks
+    } // Task 42: Test node test/chunk.js
    
     
-  }
+  };
   
   
   
