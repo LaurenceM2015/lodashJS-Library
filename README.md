@@ -19,5 +19,7 @@ I am gone only use 10 method from Lodash library:
     <li>inRange</li>
     <li>words</li>
     <li>pad</li>
-    <li>repeat</li>
+    <li>has</li>
+    <li>invert</li>
+    <li>findKey</li>
 </ol>

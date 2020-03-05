@@ -51,10 +51,48 @@
        return paddedString;
     }, // end of pad methode Task 19: test pad method
     
+    // Method 6.
+    // Task 18: run node test/pad.js
+      // Task 19: Specify:learn about the method
+      // Task 20: Ideate: plan for implementating the has() method.
+      
+      // Task 21: Implementation the game plan in the code
+        has(object, key){
+          const hasValue = object[key];
+          if(hasValue != undefined){
+            return true;
+          } return false;
+        
+      }, // Task 22: Test the has method: node test/has.js
     
+    // Method 6: invert(), Task 23 Specify, Task 24 Ideate
+    // Task 25: Implement the game plan code.
+    invert(object){
+      let invertedObject = {};
+      for(let key in object){
+        const originalValue = object[key]
+        invertedObject = {originalValue : key}
+      } return  invertedObject;
+    }, // Task 26: Test invert method: node run test/invert.js
     
+    // Method 7 findKey: Task 27: Specify, Task 28: Ideate
+    // Task 29: Implement:
     
-  };
+    finKey(object, predicate){
+      for(let key in object){
+        let value = object[key];
+        let predicateReturnValue = predicate (value);
+        if (predicateReturnValue === true){
+          return key;
+        } 
+      };
+      undefined 
+      return undefined;
+    }
+    
+   
+    
+  }
   
   
   
