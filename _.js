@@ -78,17 +78,17 @@
     // Method 7 findKey: Task 27: Specify, Task 28: Ideate
     // Task 29: Implement:
     
-    finKey(object, predicate){
+    findKey(object, predicate){
       for(let key in object){
         let value = object[key];
-        let predicateReturnValue = predicate (value);
-        if (predicateReturnValue === true){
+        let predicateReturnValue = predicate(value);
+        if (predicateReturnValue){
           return key;
         } 
       };
       undefined 
       return undefined;
-    }
+    } // Task 30: Test the findKey method: node run test/findKey
     
    
     
